@@ -5,9 +5,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sandhyamanda3195-maker" alt="sandhyamanda3195-maker" /></a> </p>
 
-- 🌱 I’m currently learning **Devops**
+- 🌱  **Devops**
 
-- 💬 Ask me about **I have 3.7 experience in TCS as a Linux Admin**
+- 💬 Ask me about **I have 3.9 experience in TCS as a Devops Engineer**
 
 - 📫 How to reach me **sandhyamanda3195@gmail.com**
 
