@@ -1,6 +1,13 @@
-# Pull base image 
-From tomcat:8-jre8 
+FROM tomcat:9-jdk17
 
-# Maintainer 
-MAINTAINER "sandhyamanda3195@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+LABEL maintainer="sandhyamanda3195@gmail.com"
+
+# Clean default apps
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy WAR
+COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+
+EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
