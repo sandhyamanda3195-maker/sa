@@ -1,0 +1,14 @@
+---
+- hosts: web
+  become: true
+  tasks:
+    - name: Login to DockerHub
+      docker_login:
+        username: "{{ docker_user }}"
+        password: "{{ docker_pass }}"
+
+    - name: Pull nginx image
+      shell: docker pull nginx:latest
+
+    - name: Run nginx container
+      shell: docker run -d --name nginx-app -p 80:80 --restart=always nginx:latest
